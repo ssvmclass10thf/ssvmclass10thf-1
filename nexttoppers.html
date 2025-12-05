@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>All Subjects</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6a00ff, #00e5ff);
+      padding: 20px;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+      text-shadow: 0 0 5px black;
+    }
+
+    .top-btn {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .top-btn button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: rgba(255,255,255,0.25);
+      color: white;
+      backdrop-filter: blur(4px);
+      transition: 0.3s;
+    }
+
+    .top-btn button:hover {
+      background: rgba(255,255,255,0.4);
+      transform: scale(1.05);
+    }
+
+    .subjects {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .subjects button {
+      width: 100%;
+      padding: 14px;
+      margin: 8px 0;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      backdrop-filter: blur(4px);
+      transition: 0.3s;
+    }
+
+    .subjects button:hover {
+      background: rgba(255, 255, 255, 0.35);
+      transform: scale(1.03);
+    }
+
+    .bottom-btn {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .bottom-btn button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: rgba(255,255,255,0.25);
+      color: white;
+      backdrop-filter: blur(4px);
+      transition: 0.3s;
+    }
+
+    .bottom-btn button:hover {
+      background: rgba(255,255,255,0.4);
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ⭐ TOP Back Button -->
+  <div class="top-btn">
+
+  </div>
+
+  <h1>विषय चुनें / Select Subject</h1>
+
+  <div class="subjects">
+    <button onclick="openPage('geography.html')">Geography</button>
+    <button onclick="openPage('economics.html')">Economics</button>
+    <button onclick="openPage('civics.html')">Civics</button>
+    <button onclick="openPage('history.html')">History</button>
+
+    <button onclick="openPage('physics.html')">Physics</button>
+    <button onclick="openPage('chemistry.html')">Chemistry</button>
+    <button onclick="openPage('biology.html')">Biology</button>
+
+    <button onclick="openPage('maths.html')">Maths</button>
+  </div>
+
+  <!-- ⭐ BOTTOM Back Button -->
+  <div class="bottom-btn">
+    <button onclick="openPage('index.html')">⬅ Back to Home</button>
+  </div>
+
+  <script>
+    function openPage(url) {
+      window.location.href = url;
+    }
+  </script>
+
+</body>
+</html>
